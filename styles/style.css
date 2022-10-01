@@ -1,11 +1,7 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -182,7 +178,7 @@
   background-color: #f2f2f2;
   padding-top: 100px;
   position: relative;
-  background-image: url(../images/feynman.png); /* Все размеры, вроде, учел, но блок выглядит иначе, чем на брифе */
+  background-image: url(../images/feynman.png);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 867px 637px;
@@ -231,12 +227,16 @@
 }
 
 .section-title_theme_dark {
+  position: relative;
   padding-top: 90px;
   color: white;
+  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
+  position: relative;
   color: white;
+  z-index: 1;
 }
 
 .table_theme_dark {
@@ -244,7 +244,6 @@
 }
 
 .table__cell_theme_dark {
-  list-style-type: none;
   width: 200px;
   color: white;
   margin-right: 0;
@@ -254,7 +253,7 @@
 
 .kaufman__triangle {
   position: absolute;
-  background-image: url(../images/kaufman-triangle.svg); /* Все размеры, вроде, учел, но блок выглядит иначе, чем на брифе */
+  background-image: url(../images/kaufman-triangle.svg);
   background-size: contain;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -279,24 +278,24 @@
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
-  flex-basis: 711px;
   flex-direction: column;
+}
+
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
   justify-content: space-between;
 }
 
 .footer__column_content_info {
   color: white;
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
 }
 
 .footer__column_content_social {
   color: white;
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
 }
 
