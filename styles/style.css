@@ -41,7 +41,7 @@
   width: 730px;
   margin: 0 0 0 64px;
   z-index: 1;
-  font-size: 102px;;
+  font-size: 102px;
   line-height: 96px;
   font-weight: 600;
 }
@@ -52,7 +52,7 @@
   left: 64px;
   width: 388px;
   z-index: 1;
-  font-size: 18px;;
+  font-size: 18px;
   line-height: 25px;
   font-weight: normal;
   margin: 0;
@@ -97,7 +97,7 @@
 .two-columns__brief {
   color: #2f80ed;
   line-height: 1.2;
-  font-size: 18px;;
+  font-size: 18px;
   font-weight: normal;
   width: 175px;
   margin: 0;
@@ -111,7 +111,7 @@
 
 .two-columns__paragraph {
   line-height: 34px;
-  font-size: 24px;;
+  font-size: 24px;
   font-weight: normal;
   margin: 0;
   padding-bottom: 30px;
