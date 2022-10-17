@@ -4,6 +4,9 @@
 /* PAGE */
 @import url(../blocks/page/page.css);
 
+/* ROOT */
+@import url(../blocks/root/root.css);
+
 /* ROTATION */
 @import url(../blocks/rotation/rotation.css);
 
