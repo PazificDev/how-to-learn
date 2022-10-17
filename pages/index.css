@@ -1,3 +1,18 @@
+@import url(../vendor/normalize.css);
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -14,6 +29,7 @@
   display: flex;
   background-color: #f2f2f2;
   align-items: center;
+  overflow: hidden;
 }
 
 .logo {
@@ -81,7 +97,7 @@
 }
 
 .two-columns {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -122,11 +138,88 @@
   font-weight: 600;
 }
 
+.techniques {
+  padding: 100px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+.cards__item {
+  display: flex;
+  list-style-type: none;
+  margin: 60px 0 0;
+  width: 240px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards__image {
+  margin: 0 40px 43px;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+}
+
+.cards__title {
+  margin: 0 0 16px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cards__description {
+  margin: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.video {
+  padding: 100px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__iframes {
+  display: flex;
+  margin: 50;
+  column-gap: 20px;
+  position: relative;
+  top: 50px;
+  z-index: 1;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+}
+
+.oakley {
+  padding: 60px 0 0;
+  background-color: #f2f2f2;
+}
+
+.digits {
+  padding: 100px 0;
+}
+
 .section-title {
   text-align: center;
   width: 60%;
   margin: 0 auto;
-  padding: 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -143,7 +236,7 @@
 }
 
 .table {
-  margin: 0 auto 100px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -171,6 +264,75 @@
   font-size: 18px;
   font-weight: normal;
   margin: 0;
+}
+
+.khan {
+  background-color: #f2f2f2;
+  padding: 105px 0 0;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0;
+
+}
+
+.khan__quote {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 50px 0 36px;
+  width: 790px;
+}
+
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 68px;
+}
+
+.khan__book-container {
+display: flex;
+align-items: flex-start;
+}
+
+.khan__book-pic {
+width: 620px;
+height: 608px;
+margin-right: 48px;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 .feynman {
@@ -263,6 +425,27 @@
   right: -210px;
 }
 
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 0;
+}
+
+.resources__logo-zone {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto 217px;
+  width: 1100px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+}
+
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
@@ -343,6 +526,11 @@
   height: 16px;
   margin: 0;
   padding-right: 10px;
+}
+
+.link:hover {
+  opacity: 60%;
+  transition: opacity 1s;
 }
 
 
